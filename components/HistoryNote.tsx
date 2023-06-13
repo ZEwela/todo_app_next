@@ -1,13 +1,12 @@
 "use client";
-import Link from "next/link";
+
 import { SyntheticEvent } from "react";
 import { BsTrash3 } from "react-icons/bs";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function HistoryNote({ note }: any) {
   const { id, title, content, created } = note || {};
   const router = useRouter();
-  const pathname = usePathname();
 
   const dispose = async (e: SyntheticEvent) => {
     e.preventDefault();

@@ -26,7 +26,7 @@ export default function CreateNote() {
   };
   return (
     <form onSubmit={(e) => create(e)} className="createNote">
-      <h3>Create a new Note</h3>
+      <h3 className="font-medium">Create a new note:</h3>
       <input
         type="text"
         placeholder="Title"
